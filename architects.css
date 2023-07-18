@@ -60,27 +60,84 @@ nav li a{
     flex-shrink: 0;
     border-radius: 8px;
     background: #ff900e;
-    margin-left: 630px;
+    margin-left: 730px;
     margin-top: 20px;
     margin-bottom: 50px;
     border: none;
 }
 #ban-png{
     padding-right: 20px;
+    padding-left: 100px;
 }
 
 
-.pic-set1{
-    margin-left: 300px;
-    margin-top: 85px;
+
+/* main styles */
+main{
+    max-width: 1440px;
+    font-family: 'Prompt', sans-serif;
 }
-.pic-set2{
-    margin-left: 300px;
-    margin-top: 10px;
+
+.teams-container{
+    display: flex;
+    margin-left: 350px;
+    align-items: center;
+    margin-top: 100px;
+}
+.buton{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 180px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #ff900e;
+    border: none;
 }
 img{
     margin-left: 10px;
+    margin-bottom: 4px;
 }
+.teams-content{
+    padding-left: 70px;
+}
+.teams-title{
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Prompt', sans-serif;
+}
+.quick{
+    color: var(--dark-03, #727272);
+}
+#of{
+    color: var(--dark-01, #131313);
+}
+.features{
+    color: #ff900e;
+}
+.facts{
+    margin-left: 360px;
+}
+.section-title{
+    color: #131313;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-description{
+    color:#424242;
+}
+
+
 
 
 /* mobile devices */
@@ -93,13 +150,27 @@ img{
         flex-direction: column;
     }
     nav ul{
-        margin-left: 27px;
+        margin-left: 25px;
     }
     #ban-png{
-        width: 370px;
+        width: 320px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .btn{
         margin-left: 0;
+    }
+    .team-png{
+        width: 150px;
+    }
+    .teams-container, .facts{
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+    }
+    .teams-content{
+        padding-left: 0;
+        text-align: center;
     }
 }
 
@@ -117,8 +188,21 @@ img{
     }
     #ban-png{
         width: 700px;
+        padding-left: 0;
     }
     .btn{
         margin-left: 0;
+    }
+    .team-png{
+        width: 250px;
+    }
+    .teams-container, .facts{
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+    }
+    .teams-content{
+        padding-left: 0;
+        text-align: center;
     }
 }
